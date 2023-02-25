@@ -1,7 +1,7 @@
 ## WORKOUT PRODUCTIVITY APP
 
 
-## Screenshot of the Project
+## To keep track of your workouts and see your progress!
 
 - Section for main goals and objectives
 - Section for workout schedule and sets/reps tracker
