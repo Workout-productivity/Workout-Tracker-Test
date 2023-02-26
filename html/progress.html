@@ -26,23 +26,13 @@
       <div class="submit-file">
         <h1> Submit your progress pics and videos here </h1>
         <!-- <form action="progress-files.php" method="post" enctype="multipart/form-data"> -->
-        <form> 
-        </form><label for="upload-file"> Choose a file to upload: </label>
-        <input type="file" id="image_input" name="upload-file" accept = "image/png, image/jpg, image/jpeg">
-        <input type="submit" id="upload">
-        </form>
-        <script>
-          document.querySelector("#file-upload").addEventListener("change", function() {
-            const reader = new FileReader();
-
-            reader.addEventListener("load", () => {
-              console.log(reader.result);
-            });
-
-            reader.readAsDataURL(this.files[0]);
-          });
-        </script>
-      <div>
+          <br>
+        <p> Choose a file to upload: </p>
+        <div id="display_image">
+          <input type="file" id="image_input" name="upload-file" accept = "image/png, image/jpg, image/jpeg">
+          <script src = "progress.js"> </script>
+        </div>
+      </div>
 
     <div class="saved-files">
       <h2> Woah! You've been working hard. I am proud of you! </h2>

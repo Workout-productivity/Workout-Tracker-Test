@@ -67,8 +67,8 @@ body {
 }
 
 .submit-file #display-image {
-    width: 300px;
-    height: 200px;
+    width: 500px;
+    height: 300px;
     border: 1px;
     background-position: center;
     background-size: cover;
@@ -76,4 +76,5 @@ body {
 
 .saved-files {
     margin-top: 100px;
+    text-align: center;
 }
