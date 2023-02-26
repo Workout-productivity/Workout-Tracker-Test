@@ -1,27 +1,60 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>GRIND - Your Workout List</title>
+  </head>
+  <body>
+    <div class="nav_bar">
+      <div class="logo">
+        <h1>GRIND</h1>
+      </div>
 
-<!--- This is the skeleton html for the main home page -->
+      <div class="items">
+        <ul class="links">
+          <li><a href="goals.html" class="link">Main Goals for The Year</a></li>
+          <li><a href="routine.html" class="link">Workout Program</a></li>
+          <li><a href="#" class="link">Schedule</a></li>
+          <li><a href="progress.html" class="link">Progress Tracker</a></li>
+        </ul>
+      </div>
 
-<html> 
+      <div class="searchBar">
+        <input type="text" class="search" placeholder="Search for more" />
+        <button id="rectangle" class="calculate">Search!</button>
+      </div>
+    </div>
 
-<head> 
-<title> GRIND - Your workout app </title>
-</head>
+    <div class="main">
+      <div class="section-list">
+        <h2 class="title">Here is your work for today</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt,
+          tempora recusandae aut corporis aperiam aliquid alias accusamus sit,
+          autem, corrupti perferendis! Laborum, perferendis doloribus nesciunt
+          dolor voluptatem ea recusandae ullam?
+        </p>
+      </div>
 
-<body>
-    <h1 style = "font-size: 69px;"> Welcome to GRIND. </h1>
-    <h2 style = "font-size: 50px;">  Your workout app. </h2>
-
-    <a href = "goals.html"> Main Goals For The Year </a> <br>
-    <a href = "routine.html"> Workout Routine and Schedule </a> <br>
-    <a href = "progress.html"> Progress Tracker </a> <br>
-
-    <h3> Check out the following video! </h3>
-    <a href = "https://www.youtube.com/watch?v=gRVjAtPip0Y"> Bench Press Tutorial </a> <br>
-    <a href = "https://www.youtube.com/watch?v=gRVjAtPip0Y" target = "_blank">
-    <img src = "bench_press_tutorial.jpg" alt = "Video thumbnail" width = "300" height = "200">
-    </a>
-
-</body>
-
+      <div class="section-videos">
+        <h2 class="title">Videos</h2>
+        <p>
+          <img
+            src="bench_press_tutorial.jpg"
+            alt="Video thumbnail"
+            width="300"
+            height="200"
+            class="test"
+          />
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt,
+          tempora recusandae aut corporis aperiam aliquid alias accusamus sit,
+          autem, corrupti perferendis! Laborum, perferendis doloribus nesciunt
+          dolor voluptatem ea recusandae ullam?
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
