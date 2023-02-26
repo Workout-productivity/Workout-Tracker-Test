@@ -66,9 +66,9 @@ body {
     border-width: 30px;
 }
 
-.submit-file #display-image {
-    width: 500px;
-    height: 300px;
+#display-image {
+    width: auto;
+    height: auto;
     border: 1px;
     background-position: center;
     background-size: cover;
