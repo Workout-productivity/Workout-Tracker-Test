@@ -67,9 +67,9 @@ body {
 }
 
 #display-image {
-    width: auto;
-    height: auto;
-    border: 1px;
+    margin-top: 50px;
+    width: 300px;
+    height: 200px;
     background-position: center;
     background-size: cover;
 }
