@@ -1,0 +1,95 @@
+/*
+Home page css
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #212121, #4b403a, #212121);
+    min-height: 100vh;
+    color: #fff;
+}
+
+.nav_bar {
+    background-color: #212121;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1 {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.nav_bar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav_bar ul li {
+    list-style: none;
+    padding: 15px;
+}
+
+.nav_bar ul li a {
+    text-decoration: none;
+    color: greenyellow;
+}
+
+.searchBar {
+    padding: 10px;
+}
+
+.searchBar .search{
+    padding: 5px 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.main {
+    padding-top: 65px;
+    display: flex;
+    display: block;
+}
+
+.main .section-list{
+    background-color: gray;
+    height: 47vh;
+}
+
+.main .section-videos{
+    background-color: #4b403a;
+    height: 47vh;
+}
+.main .title{
+    padding-top: 10px;
+    color: aquamarine;
+    text-align: center;
+}
+
+p {
+    padding: 10px 50px;
+}
+
+.test {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+      
+}
+

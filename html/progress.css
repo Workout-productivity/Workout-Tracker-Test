@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: auto;
+  padding: auto;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
@@ -58,35 +58,22 @@ body {
     outline: none;
 }
 
-.main {
-    padding-top: 65px;
-    display: flex;
-    display: block;
-}
-
-.main .section-list{
-    background-color: gray;
-    height: 47vh;
-}
-
-.main .section-videos{
-    background-color: #4b403a;
-    height: 47vh;
-}
-.main .title{
-    padding-top: 10px;
-    color: aquamarine;
+.submit-file {
+    margin-top: 200px;
+    font-size: 30px;
     text-align: center;
+    border: 3px solid green;
+    border-width: 30px;
 }
 
-p {
-    padding: 10px 50px;
+.submit-file #display-image {
+    width: 300px;
+    height: 200px;
+    border: 1px;
+    background-position: center;
+    background-size: cover;
 }
 
-.test {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-      
+.saved-files {
+    margin-top: 100px;
 }
-

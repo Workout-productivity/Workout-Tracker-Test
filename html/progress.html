@@ -1,16 +1,52 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" href="progress.css" />
+    <title> Your Progress! </title>
+  </head>
     <body>
-      <h3>
-        <a href = "home.html"> Home </a>
-    </h3>
+      <div class="nav_bar">
+        <div class="logo">
+          <h1>GRIND</h1>
+        </div>
+  
+        <div class="items">
+          <ul class="links">
+            <li><a href="goals.html" class="link">Main Goals for The Year</a></li>
+            <li><a href="routine.html" class="link">Workout Program</a></li>
+          </ul>
+        </div>
+  
+        <div class="searchBar">
+          <input type="text" class="search" placeholder="Search for more" />
+          <button id="searchButton" class="calculate">Search!</button>
+        </div>
+      </div>
     
-    <form action="progress-files.php" method="post" enctype="multipart/form-data">
-        <label for="upload-file"> Choose a file to upload: </label>
-        <input type="file" id="file-upload" name="upload-file">
-        <input type="submit" value="Upload">
-      </form>
+      <div class="submit-file">
+        <h1> Submit your progress pics and videos here </h1>
+        <!-- <form action="progress-files.php" method="post" enctype="multipart/form-data"> -->
+        <form> 
+        </form><label for="upload-file"> Choose a file to upload: </label>
+        <input type="file" id="image_input" name="upload-file" accept = "image/png, image/jpg, image/jpeg">
+        <input type="submit" id="upload">
+        </form>
+        <script>
+          document.querySelector("#file-upload").addEventListener("change", function() {
+            const reader = new FileReader();
+
+            reader.addEventListener("load", () => {
+              console.log(reader.result);
+            });
+
+            reader.readAsDataURL(this.files[0]);
+          });
+        </script>
+      <div>
+
+    <div class="saved-files">
+      <h2> Woah! You've been working hard. I am proud of you! </h2>
+    </div>
 
     </body>
-
 </html>
