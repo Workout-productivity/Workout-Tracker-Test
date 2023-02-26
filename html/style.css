@@ -67,6 +67,16 @@ body {
 .main .section-list{
     background-color: gray;
     height: 47vh;
+    text-align: center;
+}
+
+.main .section-list .checklist {
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
 }
 
 .main .section-videos{
@@ -81,6 +91,7 @@ body {
 
 p {
     padding: 10px 50px;
+    font-size: 20px;
 }
 
 .test {
