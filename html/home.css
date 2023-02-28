@@ -84,7 +84,7 @@ body {
 
 .main .section-videos{
     background-color: #4b403a;
-    height: 47vh;
+    height: auto;
 }
 .main .title{
     padding-top: 10px;
