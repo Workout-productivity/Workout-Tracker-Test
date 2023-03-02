@@ -1,7 +1,7 @@
-const imageInput = document.querySelector('#image_input');
+const image_input = document.querySelector('#image_input');
 const displayImage = document.querySelector('#display_image');
 
-imageInput.addEventListener('change', function() {
+image_input.addEventListener('change', function() {
   const file = this.files[0];
   const reader = new FileReader();
 
@@ -11,8 +11,9 @@ imageInput.addEventListener('change', function() {
     img.addEventListener('load', function() {
 
       // automatically adjust the image so it fits the border 
-      const MAX_WIDTH = 500;
-      const MAX_HEIGHT = 500;
+      const MAX_WIDTH = 600;
+      const MAX_HEIGHT = 600;
+
       let width = img.width;
       let height = img.height;
 
@@ -21,7 +22,10 @@ imageInput.addEventListener('change', function() {
           height *= MAX_WIDTH / width;
           width = MAX_WIDTH;
         }
-      } else {
+
+      } 
+      
+      else {
         if (height > MAX_HEIGHT) {
           width *= MAX_HEIGHT / height;
           height = MAX_HEIGHT;
@@ -35,4 +39,5 @@ imageInput.addEventListener('change', function() {
   });
 
   reader.readAsDataURL(file);
+
 });
