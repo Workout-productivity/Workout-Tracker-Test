@@ -1,23 +1,56 @@
 <!DOCTYPE html>
 <html>
 <!--- Goals for the year -->
-
-<ahref = "home.html" ></a>
-
+<link rel ="stylesheet" href = "goals.css">
 <head>
     <title> Goals And Objectives</title>
 </head>
 
 <body>
-    <h3>
-        <a href = "home.html"> Home </a>
-    </h3>
-    <head1> What are your goals for this year?</head1>
+    <div class="nav_bar">
+        <div class="logo">
+          <h1>GRIND</h1>
+        </div>
+  
+        <div class="items">
+          <ul class="links">
+            <li><a href="home.html" class="link">Home</a></li>
+            <li><a href="routine.html" class="link">Workout Program</a></li>
+            <li><a href="progress.html" class="link">Progress Tracker</a></li>
+          </ul>
+        </div>
+  
+        <div class="searchBar">
+          <input type="text" class="search" placeholder="Search for more" />
+          <button id="searchButton" class="calculate">Search!</button>
+        </div>
+      </div>
+  
+      <div class="main">
+        <head1> What are your goals for this year?</head1>
+        
+        <div class = "goal_input_text">
+        <form action = "/goals.php"> 
+        <label for = "goal1"> First Goal: </label>
+        <input type = "text" id = "goal1" name = "goal1"> 
+        <button> Submit </button>
+        </form>
+
+        <form action = "/goals.php"> 
+            <label for = "goal1"> Second Goal: </label>
+            <input type = "text" id = "goal2" name = "goal2"> 
+            <button> Submit </button>
+            </form>
+
+        <form action = "/goals.php"> 
+            <label for = "goal1"> Third Goal: </label>
+            <input type = "text" id = "goal3" name = "goal3"> 
+            <button> Submit </button>
+            </form>
+        </div>
+        </div>
+
     
-    <form action = "/goals.php"> 
-    <label for = "goal1"> First Goal: </label>
-    <input type = "text" id = "goal1" name = "goal1"> <br> <br>
-    </form>
 </body>
 
 </html>
