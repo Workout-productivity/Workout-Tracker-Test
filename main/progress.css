@@ -86,6 +86,7 @@ body {
   }
 
 .saved-files {
-    margin-top: 100px;
+    margin-top: 10vh;
     text-align: center;
+    margin-bottom: 10vh;
 }
