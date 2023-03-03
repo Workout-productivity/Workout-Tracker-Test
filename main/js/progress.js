@@ -1,8 +1,11 @@
 const image_input = document.querySelector('#image_input');
 const displayImage = document.querySelector('#display_image');
 
+// make it const so the image doesn't change
+
 image_input.addEventListener('change', function() {
-  const file = this.files[0];
+  const file = this.files[0]; //only the first file selected
+
   const reader = new FileReader();
 
   reader.addEventListener('load', function() {

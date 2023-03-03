@@ -58,7 +58,7 @@ body {
     outline: none;
 }
 
-.submit-file {
+.submit_file {
     padding: 50px;
     margin-top: 200px;
     font-size: 20px;
@@ -70,10 +70,20 @@ body {
 #display_image {
     margin-top: 50px;
     width: 380px;
-    height: 100px;
+    height: auto;
     background-position: center center;
     background-size: contain;
 }
+
+.submit_file #display_image input[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 9px 20px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 9px;
+    cursor: pointer;
+  }
 
 .saved-files {
     margin-top: 100px;

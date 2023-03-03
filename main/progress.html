@@ -24,14 +24,15 @@
         </div>
       </div>
       
-      <div class="submit-file">
+      <div class="submit_file">
         <h1> Submit your progress pics and videos here </h1>
         <br>
-        <p> Choose a file to upload: </p>
-        <div id="display_image"> 
-          <input type="file" id="image_input" name="upload-file" accept = "image/png, image/jpg, image/jpeg">
-          <input type="submit" id="upload">
-        </div>
+        <form id="upload-form" action="/php/uploads.php" method="POST" enctype="multipart/form-data">
+          <div id="display_image"> 
+            <input type="file" id="image_input" name="upload-file" accept="image/png, image/jpg, image/jpeg">
+            <input type="submit" id="upload">
+          </div>
+        </form>
       </div>
 
     <div class="saved-files">
