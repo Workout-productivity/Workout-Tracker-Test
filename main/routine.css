@@ -57,3 +57,10 @@ body {
     border-radius: 5px;
     outline: none;
 }
+
+.main {
+    padding-top: 85px;
+    display: flex;
+    display: block;
+    text-align: center;
+}
