@@ -26,23 +26,18 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-
 
 .logo h1 {
     padding: 10px;
     cursor: pointer;
 }
 
-.items {
-    flex-grow: 1;
-    text-align: center;
-  }
-  
 .nav_bar ul {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .nav_bar ul li {
@@ -55,7 +50,6 @@ body {
     color: greenyellow;
 }
 
-/*
 .searchBar {
     padding: 10px;
 }
@@ -66,7 +60,6 @@ body {
     border-radius: 5px;
     outline: none;
 }
-*/
 
 .main {
     padding-top: 65px;
@@ -106,11 +99,6 @@ body {
     text-align: center;
 }
 
-.nav_bar .items .link {
-    text-align: center;
-    justify-content: space-evenly;
-}
-
 p {
     padding: 10px 50px;
     font-size: 20px;
@@ -122,4 +110,3 @@ p {
     margin-right: auto;
       
 }
-
