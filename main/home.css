@@ -50,6 +50,7 @@ body {
     color: greenyellow;
 }
 
+/*
 .searchBar {
     padding: 10px;
 }
@@ -60,6 +61,7 @@ body {
     border-radius: 5px;
     outline: none;
 }
+*/
 
 .main {
     padding-top: 65px;
@@ -97,6 +99,11 @@ body {
     padding-top: 10px;
     color: aquamarine;
     text-align: center;
+}
+
+.nav_bar .items .link {
+    text-align: center;
+    justify-content: space-evenly;
 }
 
 p {

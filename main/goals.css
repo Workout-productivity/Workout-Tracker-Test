@@ -50,9 +50,11 @@ body {
     color: greenyellow;
 }
 
+/*
 .searchBar {
     padding: 10px;
 }
+
 
 .searchBar .search{
     padding: 5px 5px;
@@ -60,6 +62,7 @@ body {
     border-radius: 5px;
     outline: none;
 }
+*/
 
 .main {
     margin-top: 150px;
