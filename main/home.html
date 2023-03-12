@@ -1,92 +1,65 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <title>GRIND - Your Workout List</title>
+  </head>
+  <body>
+    <div class="nav_bar">
+      <div class="logo">
+        <h1>GRIND</h1>
+      </div>
 
-* {
-  margin: auto;
-  padding: auto;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
+      <div class="items">
+        <ul class="links">
+          <li><a href="goals.html" class="link">Main Goals for The Year</a></li>
+          <li><a href="routine.html" class="link">Workout Program</a></li>
+          <li><a href="progress.html" class="link">Progress Tracker</a></li>
+        </ul>
+      </div>
 
-body {
-    background: linear-gradient(to right, #212121, #4b403a, #212121);
-    min-height: 100vh;
-    color: #fff;
-}
+      <div class="searchBar">
+        <input type="text" class="search" placeholder="Search for more" />
+        <button id="searchButton" class="calculate">Search!</button>
+      </div>
+    </div>
 
-.nav_bar {
-    background-color: #212121;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: auto;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+    <div class="main">
+      <div class="section-list">
+        <h2 class="title">Here is your work for today</h2>
+        <br>
+        <p>
+          Remember: It's not motivation. It's called discipline.
+        </p>
+        <div class="checklist"> 
+          <form>
+          <input type = "checkbox" name = "checklist"> 1 hour cardio Info from routine. <br>
+          <input type = "checkbox" name = "checklist"> Legs Info from routine. <br>
+          <input type = "checkbox" name = "checklist"> 2 scoops Protein Powder Info from routine.
+          </form>
+        </div>
+      </div>
 
-.logo h1 {
-    padding: 10px;
-    cursor: pointer;
-}
 
-.nav_bar ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.nav_bar ul li {
-    list-style: none;
-    padding: 15px;
-}
-
-.nav_bar ul li a {
-    text-decoration: none;
-    color: greenyellow;
-}
-
-.searchBar {
-    padding: 10px;
-}
-
-.searchBar .search{
-    padding: 5px 5px;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-}
-
-.submit_file {
-    padding: 50px;
-    margin-top: 200px;
-    font-size: 20px;
-    text-align: center;
-    border: 5px solid green;
-    border-width: 10px;
-}
-
-#display_image {
-    margin-top: 50px;
-    width: 380px;
-    height: auto;
-    background-position: center center;
-    background-size: contain;
-}
-
-.submit_file #display_image input[type="submit"] {
-    background-color: green;
-    color: white;
-    padding: 9px 20px;
-    border: none;
-    border-radius: 6px;
-    margin-top: 9px;
-    cursor: pointer;
-  }
-
-.saved-files {
-    margin-top: 10vh;
-    text-align: center;
-    margin-bottom: 10vh;
-}
+      <div class="section-videos">
+        <h2 class="title">Workout Videos</h2>
+        <a href = "https://www.youtube.com/watch?v=gRVjAtPip0Y" target = "_blank"><img
+          src="bench_press_tutorial.jpg"
+          alt="Video thumbnail"
+          width="500"
+          height="300"
+          class="test"
+        />
+        </a>
+        <div class = "video_text">
+        <p>
+          Did you know: The heaviest bench press ever set by a man is 1320 lbs or 600 kg. There are no limits to strength. 
+        </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
